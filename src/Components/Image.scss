@@ -1,0 +1,83 @@
+@import "../sass/Mixins.scss";
+@import "../sass//Variables.scss";
+
+.image {
+  position: relative;
+  overflow: hidden;
+  width: 595px;
+  margin: 0 auto;
+  @include screenSize(b-1) {
+    width: 500px;
+  }
+  @include screenSize(b-3) {
+    width: 400px;
+  }
+  @include screenSize(b-5) {
+    width: 375px;
+  }
+}
+
+.image__container {
+  width: 595px;
+  margin: 0 auto;
+  @include screenSize(b-1) {
+    width: 500px;
+  }
+  @include screenSize(b-3) {
+    width: 400px;
+  }
+  @include screenSize(b-5) {
+    width: 375px;
+  }
+
+  @include printing {
+    width: 595px;
+  }
+
+  & > img {
+    margin: 0 auto;
+    width: 595px;
+    @include screenSize(b-1) {
+      width: 500px;
+    }
+    @include screenSize(b-3) {
+      width: 400px;
+    }
+    @include screenSize(b-5) {
+      width: 375px;
+    }
+    @include printing {
+      width: 595px;
+    }
+  }
+
+  &__text {
+    text-align: justify;
+    position: absolute;
+    top: 0;
+    width: 595px;
+    padding: 20px;
+    font-size: $messageFontSize;
+    font-weight: 700;
+    @include screenSize(b-1) {
+      width: 500px;
+      font-size: $messageFontSize-b1;
+    }
+    @include screenSize(b-3) {
+      font-size: $messageFontSize-b3;
+      width: 400px;
+    }
+    @include screenSize(b-5) {
+      font-size: $messageFontSize-b5;
+      width: 375px;
+    }
+    @include printing {
+      width: 595px;
+      font-size: 25px;
+    }
+
+    &--autor {
+      margin-top: 20px;
+    }
+  }
+}

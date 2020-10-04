@@ -1,0 +1,61 @@
+@import "../sass/Mixins.scss";
+@import "../sass/Variables.scss";
+
+.ImagesCollection {
+  &__gallery {
+    background-color: $bgColor;
+    grid-column: full-start / full-end;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(5, 15vw);
+    grid-gap: 1rem;
+    padding: 20px;
+    padding-bottom: 50px;
+
+    @include screenSize(b-2) {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(10, 25vw);
+    }
+
+    @include screenSize(b-5) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(20, 40vw);
+    }
+
+    &__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+
+      &:hover {
+        transform: scale(1.5, 1.5);
+      }
+    }
+  }
+
+  &__heading-primary {
+    color: #000000;
+    font-weight: 100;
+    font-size: 60px;
+    letter-spacing: 0.75rem;
+    width: 100%;
+    text-align: center;
+    transition: all 0.2s;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    user-select: none;
+
+    @include screenSize(b-4) {
+      font-size: 42.85px;
+    }
+    @include screenSize(b-5) {
+      font-size: 25.71px;
+    }
+  }
+}
+
+.error_message {
+  text-align: center;
+  color: rgb(184, 179, 180);
+}

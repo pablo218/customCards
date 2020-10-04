@@ -1,0 +1,39 @@
+/*Media querys*/
+
+@mixin screenSize($breakpoint) {
+  @if $breakpoint == b-5 {
+    @media only screen and(max-width:600px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == b-4 {
+    @media only screen and(max-width:790px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == b-3 {
+    @media only screen and(max-width:1000px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == b-2 {
+    @media only screen and(max-width:1200px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == b-1 {
+    @media only screen and(max-width:1350px) {
+      @content;
+    }
+  }
+}
+
+@mixin printing {
+  @media print {
+    @content;
+  }
+}

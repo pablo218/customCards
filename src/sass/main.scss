@@ -1,0 +1,45 @@
+@import "./Mixins.scss";
+@import "./Variables.scss";
+
+/***************** BASE ******************/
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+  background-repeat: no-repeat;
+  max-height: 100vh;
+}
+
+body {
+  background-color: $bgColor;
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 2000px;
+  max-height: 100vh;
+}
+
+.language {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 10;
+  @include screenSize(b-4) {
+    top: 1rem;
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
+
+@media print {
+  .printing {
+    display: none;
+  }
+}
