@@ -1,4 +1,6 @@
 @import "../../sass/Variables.scss";
+@import "../../sass/Mixins.scss";
+
 .button {
   display: inline-block;
   padding: 8px;
@@ -20,5 +22,19 @@
   &:active {
     transform: translateY(1.2px);
     box-shadow: 0 0.25rem 0.5rem rgba(#999, 0.5);
+  }
+
+  @include screenSize(b-4) {
+    padding: 5px;
+    width: 50px;
+    height: 20px;
+    font-size: 7px;
+  }
+
+  @include screenSize(b-5) {
+    padding: 5px;
+    width: 50px;
+    height: 20px;
+    font-size: 7px;
   }
 }

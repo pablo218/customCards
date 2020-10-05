@@ -18,7 +18,7 @@
     background-color: white;
     font-size: 15px;
     border: 1px solid rgb(184, 179, 180);
-    border-radius: 5px 0px 0px 5px;
+    //border-radius: 5px 0px 0px 5px;
     border-right: none;
     color: #999;
     height: 50px;
@@ -28,9 +28,13 @@
 
     @include screenSize(b-4) {
       width: 500px;
+      /*       height: 35.71px;
+      font-size: 10px; */
     }
     @include screenSize(b-5) {
       width: 300px;
+      /*       height: 21.42px;
+      font-size: 6.42px; */
     }
 
     &:focus {
@@ -41,8 +45,8 @@
 
   &__icon {
     border: 1px solid rgb(184, 179, 180);
-    border-left: none;
-    border-radius: 0px 5px 5px 0px;
+    //border-left: none;
+    //border-radius: 0px 5px 5px 0px;
     background-color: white;
     color: #999;
 

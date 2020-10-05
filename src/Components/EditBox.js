@@ -25,15 +25,15 @@ const EditBox = ({
     <div className="edit-box printing">
 
       <div className="edit-box__tool moreLessControllers">
-        <h6 className="moreLessControllers__text">{eng ? "opacity" : "Opacidad"}</h6>
+        <h6 className="moreLessControllers__text">{eng ? "Transparency" : "Transparencia"}</h6>
         <AddCircleOutlineIcon
           className="moreLessControllers__more"
           style={{ fontSize: "50px" }}
-          onClick={() => { opacityHandler(0.2) }} />
+          onClick={() => { opacityHandler(-0.2) }} />
         <RemoveCircleOutlineIcon
           className="moreLessControllers__less"
           style={{ fontSize: "50px" }}
-          onClick={() => { opacityHandler(-0.2) }} />
+          onClick={() => { opacityHandler(0.2) }} />
       </div>
 
       <div className="edit-box__tool moreLessControllers">

@@ -3,7 +3,7 @@
 
 .edit-box {
   font-family: sans-serif;
-  font-size: 30px;
+  font-size: 20px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 210px);
@@ -13,12 +13,12 @@
   align-content: start;
 
   @include screenSize(b-3) {
-    font-size: 25px;
+    font-size: 15px;
   }
 
   @include screenSize(b-1) {
     grid-template-columns: repeat(3, 150px);
-    font-size: 25px;
+    font-size: 12px;
   }
 
   @include screenSize(b-2) {
@@ -43,7 +43,7 @@
   }
 
   &__tool {
-    text-transform: capitalize;
+    text-transform: uppercase;
     background-color: $bgColor;
     border: 3px solid #ebe4e0;
     border-radius: 5px;
@@ -201,7 +201,6 @@
 
 .joystick {
   display: grid;
-  cursor: pointer;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(4, 1fr);
 
@@ -209,6 +208,7 @@
     grid-column: 1/6;
   }
   &__up {
+    cursor: pointer;
     height: 40px;
     width: 40px;
     grid-column: 3/4;
