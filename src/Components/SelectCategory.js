@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import SearchIcon from '@material-ui/icons/Search';
+//import SearchIcon from '@material-ui/icons/Search';
 import Button from '../Shared/UI/Button'
 import { Language } from "../Shared/Context";
 
@@ -42,13 +42,6 @@ const SelectCategory = ({ setCategory, categoryLength }) => {
           onChange={changeHandler}
           autoComplete="off"
         />
-        <SearchIcon
-          className="SelectCategory__icon"
-          style={{
-            height: "50px",
-            fontSize: "40px"
-          }}
-          onClick={submitHandler} />
       </div>
 
       <Button clicked={submitHandler}>{eng ? "search" : "Buscar"}</Button>
