@@ -44,7 +44,7 @@ const SelectCategory = ({ setCategory, categoryLength }) => {
         />
       </div>
 
-      <Button clicked={submitHandler}>{eng ? "search" : "Buscar"}</Button>
+      <Button clicked={submitHandler}>{eng ? "search images" : "Buscar imágenes"}</Button>
 
 
     </form>
