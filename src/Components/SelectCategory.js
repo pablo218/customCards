@@ -34,7 +34,7 @@ const SelectCategory = ({ setCategory, categoryLength }) => {
       <div className="SelectCategory__searchContanier">
         <input
           className="SelectCategory__search-box"
-          placeholder={eng ? 'Category... e.g: "dogs" "flowers" "christmas"' : 'Categoria... v.g: "perros" "flores" "navidad"'}
+          placeholder={eng ? 'Category... e.g: "dogs" "birds" "christmas"' : 'Categoria... v.g: "perros" "aves" "navidad"'}
           type="search"
           aria-label="Search"
           name="category"
